@@ -179,7 +179,7 @@ void Adafruit_Thermal::begin(uint16_t version) {
 
   // cheap printer from Aliexpress doesn't support this, and will
   // print a x0 when waking up.
-  if (version == 0) {
+  if (version != 0) {
     setHeatConfig();
   }
 
